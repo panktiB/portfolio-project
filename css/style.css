@@ -1,0 +1,185 @@
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: "Montserrat", sans-serif;
+	color: rgb(0, 0, 51);
+}
+
+/*to give space on either sides*/
+html {
+	display: table;
+	margin: auto;
+}
+
+body {
+	display: table-cell;
+	vertical-align: middle;
+	margin: 10px;
+	padding: 10px;
+	background-color: rgb(153, 204, 255);
+	
+}
+
+/*color of the links*/
+a {
+	color: rgb(0, 0, 51);
+}
+
+/*to make some description for the pictures appear*/
+.dropbut {
+	cursor: pointer;
+	font-size: 15px;
+}
+
+.para{
+	display: none;
+    position: absolute;
+    background-color: rgb(204, 204, 255);
+    min-width: 160px;
+    z-index: 1;
+    color: blue;
+    border-radius: 1em;
+    font-size: 15px;
+}
+
+.dropdown:hover .para {
+	display: block;
+	bottom: 5%;
+}
+
+/*facebook and other social networking websites*/
+.fa {
+     padding: 10px;
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+/* Add a hover effect*/
+.fa:hover {
+    opacity: 0.7;
+}
+
+/*specific color for each brand */
+
+/*Facebook*/
+.fa-facebook {
+    background: #3b5998;
+    color: white;
+}
+
+/*instagram*/
+.fa-instagram {
+	background: rgb(230, 0, 115);
+	color: black;
+	text-align: center;
+}
+
+/*twitter*/
+.fa-twitter {
+	background: #55ACEE;
+	color: white;
+}
+
+/*to make my pictures fit correctly*/
+img {
+	max-width: 100%;
+	border-style: double;
+	border-color: rgb(0, 0, 51);
+}
+
+.img-circle {
+	max-width: 50%;
+}
+
+/*the long line styling*/
+hr {
+	border: none;
+	height: 1px;
+	background-color: rgb(0, 0, 51);
+
+}
+
+/*giving border to the imagess*/
+.pictures {
+	border-style: double;
+	border-width: 1px;
+	border-color: rgb(0, 0, 51);
+}
+
+/*responsiveness*/
+/*device like an ipad*/
+@media screen and (min-width: 760px) and (max-width: 1025px) {
+
+	.img-circle {
+		max-width: 50%;
+	}
+
+	h3 {
+		font-size: 3em;
+	}
+
+	h4 {
+		font-size: 2em;
+	}
+
+	.dropbut {
+		font-size: 20px;
+	}
+
+	.para {
+		font-size: 20px;
+	}
+	
+	.fa {
+	    padding: 13px;
+	    font-size: 25px;
+	    width: 35px;
+	    text-align: center;
+	    text-decoration: none;
+	    margin: 5px 2px;
+	}
+
+}
+
+
+/*device like a desktop*/
+@media screen and (min-width: 1025px) {
+
+	.img-circle {
+		max-width: 100%;
+	}
+
+	h3 {
+		font-size: 4em;
+	}
+
+	h4 {
+		font-size: 3em;
+	}
+
+	.dropbut {
+		font-size: 25px;
+	}
+
+	.para {
+		font-size: 25px;
+	}
+
+	a{
+		font-size: 20px;
+	}
+
+	.fa {
+	    padding: 15px;
+	    font-size: 30px;
+	    width: 40px;
+	    text-align: center;
+	    text-decoration: none;
+	    margin: 5px 2px;
+	}
+}
